@@ -5,36 +5,25 @@ Bu proje, retina fundus görüntülerini derin öğrenme kullanarak otomatik ola
 
 ---
 
-## 🎯 Projenin Amacı
-
+##  Projenin Amacı؟
 Retina görüntülerini üç kategoriye ayırmak:
-
 | Kategori | Açıklama |
 |----------|----------|
 | ✅ **Good** | Kaliteli ve analiz edilebilir görüntü |
 | ❌ **Bad** | Düşük kaliteli veya bozuk görüntü |
 | ⚠️ **Outlier** | Sınıflandırılamayan veya belirsiz görüntü |
-
----
-
-## 🛠️ Kullanılan Teknolojiler
-
+##  Kullanılan Teknolojiler
 ### Yapay Zeka & Görüntü İşleme
 - **TensorFlow / Keras** — CNN modelinin eğitimi
 - **OpenCV** — Görüntü ön işleme ve Optik Disk kaldırma
 - **NumPy** — Sayısal işlemler
-
 ### Backend
 - **Python 3.13**
 - **Flask** — REST API sunucusu
 - **Flask-CORS** — Cross-Origin isteklerine izin verme
-
 ### Frontend
 - **React.js** — Kullanıcı arayüzü
-
----
-
-## 🧠 Modelin Çalışma Mantığı
+## Modelin Çalışma Mantığı
 
 ```
 Ham Retina Görüntüsü
@@ -60,7 +49,7 @@ Dense(128) → Dense(3, softmax)
 
 ---
 
-## 📁 Proje Yapısı
+## Proje Yapısı :
 
 ```
 retina-project/
@@ -74,36 +63,32 @@ retina-project/
 
 ---
 
-## 🚀 Kurulum ve Çalıştırma
-
+## Kurulum ve Çalıştırma :
 ### Backend
-
 ```bash
 cd backend
 pip install flask flask-cors tensorflow opencv-python
 python app.py
 ```
-
 ### Frontend
-
 ```bash
 cd frontend
 npm install
 npm start
-```
+----
 
 Uygulama `http://localhost:3000` adresinde çalışacaktır.
 
 ---
 
-## 📊 Eğitim Verisi
+## Eğitim Verisi
+-
+Exudate detection for diabetic retinopathy with circular Hough transformation and convolutional neural networks makallesinde proje ve veri seti alındı
 
 - **DRIMDB** veri seti kullanılmıştır
 - Görüntüler `128x128` piksel boyutuna yeniden ölçeklendirilmiştir
 - Eğitim sırasında %10 doğrulama ayrımı uygulanmıştır
 
 ---
-
-## 👨‍💻 Geliştirici
-
+##Geliştirici
 Bu proje bir görüntü kalite sınıflandırma sistemi olarak geliştirilmiştir.
